@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+        content="Алиса знает, что делать, центр развлечений - это игровое пространство по мотивам мультфильма режиссера Тимура Бекмамбетова">
+        <title>Азарт</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        
+        <div class="bg-bg-black h-screen">
+            <main class="w-full bg-bg-black">
+                <h1 class="visually-hidden">Скрытый заголовок</h1>
+                
+                <section>
+                    <div class="container">
+
+                        <!-- Мобильная кнопка -->
+                        <div class=" bg-bg-black rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
+                            <button class="btn__menu--mobile flex items-center gap-2 pl-10 pr-2 py-1 rounded">
+                                <svg class="h-3 w-3" viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>
+                            </button>   
+                        </div>
+                        
+                        <!-- Мобильное меню -->
+                        <div class="mobile-menu h-screen">
+                            <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
+                                <div>
+                                    <a href="/">
+                                        <div class="flex items-center justify-start pb-2 gap-2">
+                                            <img src="/src/img/logo.png" alt="логотип" />
+                                            <img src="/src/logo_name.svg" alt="" />
+                                        </div>
+                                    </a>
+                                    
+                        
+                                    <ul class="pb-3">
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-1">Виды услуг</a></li>
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-2">Наши проекты</a></li>
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-3">Лицензии и сертификаты</a></li>
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-4">О компании</a></li>
+                                    </ul>
+                        
+                                    <button class="bg-red rounded-md p-2">
+                                        <div class="flex items-center gap-1">
+                                            <a class="text-white text-base font-bold popup-link" href="#popup1">
+                                                Перезвоните мне
+                                            </a>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                        
+                        
+                                    <ul class="py-6 ">
+                                        <li class="text-base text-gray font-normal flex items-center gap-2 pb-3">
+                                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.125C22 3.95625 21.055 3 19.9 3H3.1C1.945 3 1 3.95625 1 5.125V17.875C1 19.0438 1.945 20 3.1 20H19.9C21.055 20 22 19.0438 22 17.875V5.125ZM19.9 5.125L11.5 10.4375L3.1 5.125H19.9ZM19.9 17.875H3.1V7.25L11.5 12.5625L19.9 7.25V17.875Z" fill="#CCCCCC"/>
+                                                </svg>
+                                                <a href="azart_ooo@mail.ru">azart_ooo@mail.ru</a>
+                                            
+                                        </li>
+                                        <li class="text-base text-gray font-normal flex items-center gap-2 pb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                                <path d="M19.9994 16.4765V19.1862C20.0005 19.4377 19.9488 19.6867 19.8479 19.9172C19.7469 20.1477 19.5988 20.3546 19.413 20.5247C19.2273 20.6947 19.008 20.8242 18.7693 20.9048C18.5305 20.9854 18.2775 21.0153 18.0265 20.9927C15.2415 20.6907 12.5664 19.7409 10.216 18.2197C8.02929 16.8329 6.17534 14.9827 4.7858 12.8003C3.25627 10.4439 2.30442 7.76107 2.00735 4.96915C1.98473 4.71938 2.01447 4.46764 2.09468 4.22996C2.17489 3.99229 2.30381 3.77389 2.47323 3.58866C2.64265 3.40343 2.84885 3.25544 3.07872 3.15411C3.30858 3.05278 3.55707 3.00032 3.80837 3.00009H6.52347C6.96269 2.99577 7.3885 3.151 7.72152 3.43683C8.05455 3.72267 8.27207 4.11961 8.33354 4.55366C8.44814 5.42084 8.66067 6.27229 8.96707 7.09177C9.08883 7.41507 9.11519 7.76642 9.043 8.1042C8.97082 8.44198 8.80313 8.75203 8.5598 8.99761L7.41041 10.1447C8.69877 12.406 10.5748 14.2784 12.8406 15.5642L13.99 14.4171C14.2361 14.1742 14.5467 14.0069 14.8852 13.9348C15.2236 13.8628 15.5757 13.8891 15.8996 14.0106C16.7207 14.3164 17.5739 14.5285 18.4428 14.6429C18.8824 14.7048 19.2839 14.9258 19.5709 15.2639C19.858 15.6019 20.0105 16.0335 19.9994 16.4765Z" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <a href="">8 800 555 35 35</a>
+                                        </li>
+                                        <li class="text-base text-gray font-normal flex items-center gap-2 pb-3">
+                                            <img src="./src/img/icons/map.svg" alt="">
+                                            <p>Приморский край, Партизанский район, с. Екатериновка, ул. Транспортная, дом 6А, помещение 1 </p>
+                                        </li>
+                                    </ul>
+                                    <div class="pattern1"></div>
+                                    <div>
+                                        <p class="text-gray font-normal ">
+                                            Азарт стремится всегда идти в ногу со временем, испольуя системный подход к бизнесу. Мы применяем только качественные материалы и оборудование, при минимальных затратах на производство.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Кнопка закрытия мобильного меню -->
+                        <button class="btn-close-menu md:hidden absolute top-5 right-5">
+                            <svg viewBox="0 0 64 48">
+                                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                            </svg>
+                        </button>
+
+
+                        <!-- Сайдбар -->
+                        <div class="wrapper">    
+                            <aside class="sidebar md:block hidden mr-10 fixed">
+                                <div>
+                                    <div class="flex items-center justify-start pb-2 gap-2">
+                                        <img src="/src/img/logo.png" alt="логотип" />
+                                        <img src="/src/logo_name.svg" alt="" />
+                                    </div>
+                                    
+
+                                    <ul class="pb-3">
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-1">Виды услуг</a></li>
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-2">Наши проекты</a></li>
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-3">Лицензии и сертификаты</a></li>
+                                        <li class="text-base text-white font-normal pb-1 nav-link"><a href="#"  data-goto=".page-section-4">О компании</a></li>
+                                    </ul>
+
+                                    <button class="bg-red rounded-md p-2">
+                                        <div class="flex items-center gap-1">
+                                            <a class="text-white text-base font-bold popup-link" href="#popup1">
+                                                Перезвоните мне
+                                            </a>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    
+                                    <ul class="py-6 ">
+                                        <li class="text-base text-gray font-normal flex items-center gap-2 pb-3">
+                                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22 5.125C22 3.95625 21.055 3 19.9 3H3.1C1.945 3 1 3.95625 1 5.125V17.875C1 19.0438 1.945 20 3.1 20H19.9C21.055 20 22 19.0438 22 17.875V5.125ZM19.9 5.125L11.5 10.4375L3.1 5.125H19.9ZM19.9 17.875H3.1V7.25L11.5 12.5625L19.9 7.25V17.875Z" fill="#CCCCCC"/>
+                                                </svg>
+                                                <a href="azart_ooo@mail.ru">azart_ooo@mail.ru</a>
+                                            
+                                        </li>
+                                        <li class="text-base text-gray font-normal flex items-center gap-2 pb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                                <path d="M19.9994 16.4765V19.1862C20.0005 19.4377 19.9488 19.6867 19.8479 19.9172C19.7469 20.1477 19.5988 20.3546 19.413 20.5247C19.2273 20.6947 19.008 20.8242 18.7693 20.9048C18.5305 20.9854 18.2775 21.0153 18.0265 20.9927C15.2415 20.6907 12.5664 19.7409 10.216 18.2197C8.02929 16.8329 6.17534 14.9827 4.7858 12.8003C3.25627 10.4439 2.30442 7.76107 2.00735 4.96915C1.98473 4.71938 2.01447 4.46764 2.09468 4.22996C2.17489 3.99229 2.30381 3.77389 2.47323 3.58866C2.64265 3.40343 2.84885 3.25544 3.07872 3.15411C3.30858 3.05278 3.55707 3.00032 3.80837 3.00009H6.52347C6.96269 2.99577 7.3885 3.151 7.72152 3.43683C8.05455 3.72267 8.27207 4.11961 8.33354 4.55366C8.44814 5.42084 8.66067 6.27229 8.96707 7.09177C9.08883 7.41507 9.11519 7.76642 9.043 8.1042C8.97082 8.44198 8.80313 8.75203 8.5598 8.99761L7.41041 10.1447C8.69877 12.406 10.5748 14.2784 12.8406 15.5642L13.99 14.4171C14.2361 14.1742 14.5467 14.0069 14.8852 13.9348C15.2236 13.8628 15.5757 13.8891 15.8996 14.0106C16.7207 14.3164 17.5739 14.5285 18.4428 14.6429C18.8824 14.7048 19.2839 14.9258 19.5709 15.2639C19.858 15.6019 20.0105 16.0335 19.9994 16.4765Z" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <a href="tel:+">8 800 555 35 35</a>
+                                        </li>
+                                        <li class="text-base text-gray font-normal flex items-center gap-2 pb-3">
+                                        <img src="./src/img/icons/map.svg" alt="">
+                                            <p>Приморский край, Партизанский район, с. Екатериновка, ул. Транспортная, дом 6А, помещение 1 </p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="pattern1"></div>
+
+                                    <div>
+                                        <p class="text-gray font-normal ">
+                                            Азарт стремится всегда идти в ногу со временем, испольуя системный подход к бизнесу. Мы применяем только качественные материалы и оборудование, при минимальных затратах на производство.
+                                        </p>
+                                    </div>
+                                </div>
+                            </aside>
+
+
+                            <section class="main-section md:pl-72 pl-0">
+                                <div class="container">
+                                    <img src="./src/img/main/main-bg.png" alt="">
+                                    <h2 class="md:text-6xl text-3xl font-black uppercase text-white pt-2">
+                                        строительно-монтажная компания азарт
+                                    </h2>
+                                    <p class="text-gray md:text-xl text-base font-normal py-7">
+                                        Общестроительные работы, металлообработка, изготовление металлоконструкций, восcтановление узлов и агрегатов спец. техники
+                                    </p>
+                                </div>
+
+                                <button class="bg-red rounded-md w-full p-2">
+                                    <div class="flex items-center justify-between gap-1">
+                                        
+                                        <a class="text-white text-base font-bold popup-link" href="#popup2">
+                                            Заказать проект
+                                        </a>
+                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                            <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </button>
+
+                                <!-- TABS -->
+                                <section class="page-section-1">
+                                    <h2 class="md:text-5xl text-3xl font-black uppercase text-white md:pt-24 pt-10 md:pb-12 pb-7">
+                                        Виды услуг
+                                    </h2>
+
+                                    <ul class="faq__list">
+                                        <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
+                                            <button class="faq__btn _tabs-button ">строительно - монтажные работы</button>
+                                            <div class="faq__content _tabs-content">
+                                                <p>
+                                                    — Разработка котлованов, траншей, замена грунта, обратная засыпка
+                                                </p>
+                                                <p>
+                                                    —  Устройство железобетонных фундаментов
+                                                </p>
+                                                <p>
+                                                    — Монтаж стеновых панелей наружного ограждения и кровли
+                                                </p>
+                                                <p>
+                                                    — Внутренняя отделка (перегородки, стены, полы, окна, двери)
+                                                </p>
+                                                <p>
+                                                    — Инженерные сети (водопровод, канализация, слаботочка, электрика, вентиляция)
+                                                </p>
+                                                <p>
+                                                    — Благоустройство территории (покрытие проездов ж.б, озеленение, планировка)
+                                                </p>
+                                                <p>
+                                                    — Устройство шпунтовых ограждений (причалы, пирсы)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
+                                            <button class="faq__btn _tabs-button ">строительно - монтажные работы</button>
+                                            <div class="faq__content _tabs-content">
+                                                <p>
+                                                    — Разработка котлованов, траншей, замена грунта, обратная засыпка
+                                                </p>
+                                                <p>
+                                                    —  Устройство железобетонных фундаментов
+                                                </p>
+                                                <p>
+                                                    — Монтаж стеновых панелей наружного ограждения и кровли
+                                                </p>
+                                                <p>
+                                                    — Внутренняя отделка (перегородки, стены, полы, окна, двери)
+                                                </p>
+                                                <p>
+                                                    — Инженерные сети (водопровод, канализация, слаботочка, электрика, вентиляция)
+                                                </p>
+                                                <p>
+                                                    — Благоустройство территории (покрытие проездов ж.б, озеленение, планировка)
+                                                </p>
+                                                <p>
+                                                    — Устройство шпунтовых ограждений (причалы, пирсы)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
+                                            <button class="faq__btn _tabs-button ">строительно - монтажные работы</button>
+                                            <div class="faq__content _tabs-content">
+                                                <p>
+                                                    — Разработка котлованов, траншей, замена грунта, обратная засыпка
+                                                </p>
+                                                <p>
+                                                    —  Устройство железобетонных фундаментов
+                                                </p>
+                                                <p>
+                                                    — Монтаж стеновых панелей наружного ограждения и кровли
+                                                </p>
+                                                <p>
+                                                    — Внутренняя отделка (перегородки, стены, полы, окна, двери)
+                                                </p>
+                                                <p>
+                                                    — Инженерные сети (водопровод, канализация, слаботочка, электрика, вентиляция)
+                                                </p>
+                                                <p>
+                                                    — Благоустройство территории (покрытие проездов ж.б, озеленение, планировка)
+                                                </p>
+                                                <p>
+                                                    — Устройство шпунтовых ограждений (причалы, пирсы)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
+                                            <button class="faq__btn _tabs-button ">строительно - монтажные работы</button>
+                                            <div class="faq__content _tabs-content">
+                                                <p>
+                                                    — Разработка котлованов, траншей, замена грунта, обратная засыпка
+                                                </p>
+                                                <p>
+                                                    —  Устройство железобетонных фундаментов
+                                                </p>
+                                                <p>
+                                                    — Монтаж стеновых панелей наружного ограждения и кровли
+                                                </p>
+                                                <p>
+                                                    — Внутренняя отделка (перегородки, стены, полы, окна, двери)
+                                                </p>
+                                                <p>
+                                                    — Инженерные сети (водопровод, канализация, слаботочка, электрика, вентиляция)
+                                                </p>
+                                                <p>
+                                                    — Благоустройство территории (покрытие проездов ж.б, озеленение, планировка)
+                                                </p>
+                                                <p>
+                                                    — Устройство шпунтовых ограждений (причалы, пирсы)
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <!-- НАШИ ПРОЕКТЫ -->
+                                <section class="py-10 page-section-2">
+                                    <div class="container">
+                                        <h2 class="md:text-5xl text-3xl font-black uppercase text-white md:pt-24 pt-10 md:pb-12 pb-7">
+                                            Наши проекты
+                                        </h2>
+
+                                        <div class="project-swiper w-0 min-w-[100%] overflow-hidden">
+                                            <div class="project-item">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 gap-10">
+                                                            <div id="left">
+                                                                <img class="rounded-lg w-max" src="./src/img/project/project1.png" alt="">
+    
+                                                            </div>
+                    
+                    
+                                                            <div id="right" class="text-gray text-base md:max-w-sm">
+                                                                <p class="text-white text-lg pt-">
+                                                                    Склад ООО «Большая Фура» 
+                                                                </p>
+                                                                <p class="py-8">
+                                                                    Описание проекта  в области капитального строительства промышленных зданий и сооружений, ангаров и складов, административных и торговых центров.
+                                                                </p>
+                                                                <p>
+                                                                    Описание проекта  в области капитального строительства промышленных зданий и сооружений, ангаров и складов, административных и торговых центров.
+                                                                </p>
+                                                                
+                    
+                                                                <button class="bg-red rounded-md mt-4 p-2 w-full">
+                                                                    <div class="flex items-center justify-between gap-1">
+                                                                        <a class="text-white text-base font-bold" href="/our-projects.html">Подробнее</a>
+                            
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                                            <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                                                        </svg>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>      
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="flex items-center justify-between pt-5 pb-10">
+                                                    <button class="text-sm text-gray prev-slide">Назад</button>
+                                                    <div class="flex items-center gap-2 justify-between">
+                                                        <button class="text-base text-white next-slide">Следующий проект</button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                            <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="pattern1 my-10"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                
+                                </section>
+
+                                <!-- ЛИЦЕНЗИИ И СЕРТИФИКАТЫ -->
+                                <section class="py-10 sertificate w-0 min-w-[100%] page-section-3">
+                                    <div class="container">
+                                        <h2 class="md:text-5xl text-3xl font-black uppercase text-white md:pt-24 pt-10 md:pb-12 pb-7">
+                                            Лицензии и сертификаты   
+                                        </h2>
+                                        <div class="gallery-wrapper sertificate-swiper">
+                                            <div class="flex swiper-wrapper gap-10">
+                                                <div class="sertificate-slide">
+                                                    <a class="" href="src/img/sertificate/sertificate.png" data-caption="Image caption">
+                                                        <img src="src/img/sertificate/sertificate.png" height="300" alt="First image">
+                                                    </a>
+                                                </div>
+                                                <div class="sertificate-slide">
+                                                    <a class="" href="src/img/sertificate/sertificate.png" data-caption="Image caption">
+                                                        <img src="src/img/sertificate/sertificate.png" height="300" alt="First image">
+                                                    </a>
+                                                </div>
+                                            </div>                       
+                                        </div>  
+
+                                        <div class="pattern1"></div>
+                                    </div>
+                                    
+                                </section>
+
+                                
+
+
+                                <section class="py-10 sertificate page-section-4">
+                                    <div class="container">
+                                        <h2 class="md:text-5xl text-3xl font-black uppercase text-white pt-24 md:pb-12 pb-7">
+                                            О компании   
+                                        </h2>
+                                        <div class="text-gray">
+                                            <div class="flex">
+                                                <img src="/src/img/icons/quotes.png" alt="Ковычки">
+                                                <img src="/src/img/icons/quotes.png" alt="Ковычки">
+                                            </div>
+                                            <p class="text-gray md:text-2xl text-base font-extralight pl-10">
+                                                Наше развитие — это развитие наших заказчиков, благодаря добросовестному деловому партнерству, с которыми мы приобретаем не только источник дохода, но и добрых друзей.   
+                                            </p>
+                                            <div class="flex justify-end items-end">
+                                                <img src="/src/img/icons/quotes_r.png" alt="Ковычки">
+                                                <img src="/src/img/icons/quotes_r.png" alt="Ковычки">
+                                            </div>
+                                                 
+                                        </div>  
+
+                                        <div class="text-white text-base font-normal">
+                                            <p class="pb-5">
+                                                ООО Азарт — динамично развивающаяся российская строительная компания из Владивостока, специализирующаяся в области капитального строительства промышленных зданий и сооружений, ангаров и складов, административных и торговых центров.
+                                            </p>
+
+                                            <p class="pb-5">
+                                                ООО Азарт — динамично развивающаяся российская строительная компания из Владивостока, специализирующаяся в области капитального строительства промышленных зданий и сооружений, ангаров и складов, административных и торговых центров. Динамично развивающаяся российская строительная компания из Владивостока, специализирующаяся в области капитального строительства промышленных зданий и сооружений, ангаров и складов, административных и торговых центров.
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-center gap-2 flex-wrap">
+                                            <img class="md:hidden block img_drill1" src="/src/img/about/drill2.png" alt="дрель2">
+                                            <img class="img_drill2" src="/src/img/about/drill1.png" alt="дрель1">
+                                            <img class="md:block hidden img_drill1" src="/src/img/about/drill2.png" alt="дрель2">
+                                            <img class="img_drill2" src="/src/img/about/drill3.png" alt="дрель3">
+                                        </div>
+                                        <div class="pattern1"></div>
+                                    </div>
+                                    
+                                </section>
+
+                                <section class="pb-10">
+                                    <div class="container">
+                                        <h2 class="md:text-5xl text-3xl font-black uppercase text-white md:pb-12 pb-7">
+                                            Доверьте нам ваш следующий проект  
+                                        </h2>
+                                        <div class="flex">
+                                            <div class="rounded-2xl bg-bg-form p-8">
+                    
+                            
+                                                <div class="form-wrapper">
+                                                    <form action="#" id="form" class="form validate-form">
+                                                        <div class="form__item">
+                                                            <input id="formName" type="text" name="name" class="form__input _req w-full"
+                                                                placeholder="Имя">
+                                                        </div>
+                                
+                                                        <div class="form__item">
+                                                            <input id="formPhone" type="tel" name="phone" class="form__input _req w-full"
+                                                                placeholder="Телефон">
+                                                        </div>
+                    
+                                                        <div class="form__item">
+                                                            <input id="formEmail" type="email" name="email" class="form__input _req w-full"
+                                                                placeholder="Электронный адрес">
+                                                        </div>
+                    
+                                                        <div class="form__item">
+                                                            <textarea id="formEmail" type="text" name="textarea" class="form__input _req w-full"
+                                                                placeholder="Описание проекта (опционально)"></textarea>
+                                                        </div>
+                                
+                                                        <button class="bg-red rounded-md p-2 w-full" type="submit">
+                                                            <div class="flex items-center justify-between  gap-1">
+                                                                <p class="text-white text-base font-bold">Отправить заявку</p>
+                                            
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                                                </svg>
+                                                            </div>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+
+            
+            <section id="popup1" class="popup">
+                <div class="popup__body popup__body flex items-center justify-center">
+                    <div class="popup__content bg-bg-black ">
+                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                </svg>
+                        </button>
+                        <h2 class="text-white z-10 font-normal md:text-4xl text-xl uppercase pb-4 text-center">Заявка на звонок</h2>
+                        <p class="text-white text-base text-center">
+                            Заполните ваши данные и мы свяжемся с вами в ближайшее время
+                        </p>
+                        <div class="popup__body flex">
+                            <div class="popup__content rounded-2xl ">
+    
+            
+                                <div class="form-wrapper">
+                                    <form action="#" id="form" class="form validate-form">
+                                        <div class="form__item">
+                                            <input id="formName" type="text" name="name" class="form__input _req w-full"
+                                                placeholder="Имя">
+                                        </div>
+                
+                                        <div class="form__item">
+                                            <input id="formPhone" type="tel" name="phone" class="form__input _req w-full"
+                                                placeholder="Телефон">
+                                        </div>
+    
+                                        <div class="form__item">
+                                            <input id="formEmail" type="email" name="email" class="form__input _req w-full"
+                                                placeholder="Электронный адрес">
+                                        </div>
+    
+                                        <div class="form__item">
+                                            <textarea id="formEmail" type="text" name="textarea" class="form__input _req w-full"
+                                                placeholder="Описание проекта (опционально)"></textarea>
+                                        </div>
+                
+                                        <button class="bg-red rounded-md p-2 w-full" type="submit">
+                                            <div class="flex items-center justify-between  gap-1">
+                                                <p class="text-white text-base font-bold">Отправить заявку</p>
+                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
+                                class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
+                                данных</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="popup2" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content bg-bg-black">
+                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                </svg>
+                        </button>
+                        <h2 class="text-white z-10 font-normal md:text-4xl text-xl uppercase pb-4 text-center">Заказать проект</h2>
+                        <p class="text-white text-base text-center">
+                            Заполните ваши данные и мы свяжемся с вами в ближайшее время
+                        </p>
+                        <div class="popup__body flex">
+                            <div class="popup__content rounded-2xl ">
+    
+            
+                                <div class="form-wrapper">
+                                    <form action="#" id="form" class="form validate-form">
+                                        <div class="form__item">
+                                            <input id="formName" type="text" name="name" class="form__input _req w-full"
+                                                placeholder="Имя">
+                                        </div>
+                
+                                        <div class="form__item">
+                                            <input id="formPhone" type="tel" name="phone" class="form__input _req w-full"
+                                                placeholder="Телефон">
+                                        </div>
+    
+                                        <div class="form__item">
+                                            <input id="formEmail" type="email" name="email" class="form__input _req w-full"
+                                                placeholder="Электронный адрес">
+                                        </div>
+    
+                                        <div class="form__item">
+                                            <textarea id="formEmail" type="text" name="textarea" class="form__input _req w-full"
+                                                placeholder="Описание проекта (опционально)"></textarea>
+                                        </div>
+                
+                                        <button class="bg-red rounded-md p-2 w-full" type="submit">
+                                            <div class="flex items-center justify-between  gap-1">
+                                                <p class="text-white text-base font-bold">Отправить заявку</p>
+                            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15" fill="none">
+                                                    <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM26.2071 8.20711C26.5976 7.81658 26.5976 7.18342 26.2071 6.79289L19.8431 0.428932C19.4526 0.0384078 18.8195 0.0384078 18.4289 0.428932C18.0384 0.819457 18.0384 1.45262 18.4289 1.84315L24.0858 7.5L18.4289 13.1569C18.0384 13.5474 18.0384 14.1805 18.4289 14.5711C18.8195 14.9616 19.4526 14.9616 19.8431 14.5711L26.2071 8.20711ZM1 8.5H25.5V6.5H1V8.5Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="form-section__descriptions w-full">Нажимая кнопку “Получить консультацию” я даю согласие на <a
+                                class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
+                                данных</a></p>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+        
+        <div class="scroll-top">
+            <img src="./src/img/up-arrow.svg" alt="стрелка вверх">
+        </div>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/baguettebox.js"></script>
+        <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

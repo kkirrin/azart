@@ -1,0 +1,119 @@
+.faq {
+    padding: 70px 0;
+    background-image: url('../src/img/bg/faq-bg.jpg');
+    background-size: cover;
+}
+
+.faq__title {
+    color: #FFF;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+    max-width: 460px;
+}
+
+.faq__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    min-height: 800px;
+    color: #ffffff;
+    align-items: center;
+    justify-items: center;
+}
+
+._tabs-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    padding: 0 45px 10px 42px;
+    /* background-color: #090952; */
+    border-radius: 0 0 40px 10px;
+    margin-bottom: 15px;
+}
+
+._tabs-content._active {
+    opacity: 1;
+}
+
+.faq__btn {
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 30px 45px 30px 42px;
+    /* background-color: #090952; */
+    border-radius: 10px 10px 40px 10px;
+    transition: all 0.3s ease;
+}
+
+.faq__btn::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    /* background-image: url('../src/img/btn_open_close.png'); */
+    background-image: url('../src/img/btn-blue.png');
+    transition: transform 0.3s ease;
+}
+
+.faq__btn._active {
+    border-radius: 10px 10px 0 0;
+}
+
+.faq__btn._active.faq__btn::before {
+    transform: rotate(-45deg);
+}
+
+.faq__item--green .faq__btn,
+.faq__item--green ._tabs-content {
+    /* background-color: #2CC304; */
+}
+
+@media (max-width: 767px) {
+    .faq__wrapper {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        justify-items: left;
+    }
+
+    .faq__title {
+        font-size: 24px;
+    }
+
+    .faq__btn {
+        font-size: 14px;
+        padding: 20px 65px 20px 14px;
+    }
+
+    .faq__btn::before {
+        top: 5px;
+        right: 20px;
+    }
+
+    ._tabs-content {
+        padding: 0 45px 10px 14px;
+    }
+}
+
+.faq__content p {
+    color: #CCC;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.faq__btn {
+    border-bottom: 1px solid #FF4539;
+}

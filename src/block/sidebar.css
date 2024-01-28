@@ -1,0 +1,19 @@
+.sidebar {
+    width: 25%; 
+    height: 100vh;
+    max-width:250px;
+}
+
+/* .main-section {
+    width: 70%; 
+}
+
+@media (max-width:1023px) {
+    .main-section {
+        width: 100%; 
+    }   
+} */
+
+.wrapper {
+    display: flex;
+}
